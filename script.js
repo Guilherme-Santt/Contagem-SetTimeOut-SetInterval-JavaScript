@@ -19,9 +19,9 @@ function IniciarCronometro(){
 
         var soma = parseInt(cronometro) + 1;
 
-        visu = document.getElementById('c').innerHTML = soma;
-        if(visu == '185' || visu == 185){
-            clearInterval(tempocr);
+        document.getElementById('c').innerHTML = soma;
+        if(soma == 10){
+            PararCronometro();
         }
     },1000)
 
