@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .ic{
+        background-color: green;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+    }
+    .pc{
+        cursor: pointer;
+        background-color: red;
+        font-size: 20px;
+        width: 100px;
+        height: 100px;
+    }
+</style>
+<body>
+    <div>
+        <h2>Limitador de contagem SetTime</h2>
+    </div>
+    <div>
+        <p id="tempo">0</p>
+        <button class="ic" onclick="IniciarContagem()">Iniciar contagem</button>
+        <button class="pc" onclick="PararContagem()">Parar contagem</but>
+    </div>
+
+    <div>
+        <h2>Contador Intval</h2>
+    </div>
+
+    <div>
+        <p id="c">0</p>
+        <button class="ic" onclick="IniciarCronometro()">Iniciar </button>
+        <button class="pc" onclick="PararCronometro()">Parar </but>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
