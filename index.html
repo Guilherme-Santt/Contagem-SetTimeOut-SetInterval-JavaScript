@@ -24,7 +24,11 @@
     .pc{
         cursor: pointer;
         background-color: red;
-        font-size: 20px;
+        width: 100px;
+        height: 100px;
+    }
+    .bc{
+        cursor: pointer;
         width: 100px;
         height: 100px;
     }
@@ -34,9 +38,10 @@
         <h2>Limitador de contagem SetTime</h2>
     </div>
     <div>
-        <p id="tempo">0</p>
         <button class="ic" onclick="IniciarContagem()">Iniciar</button>
-        <button class="pc" onclick="PararContagem()">Parar</but>
+        <button class="pc" onclick="PararContagem()">Parar</button>
+        <button class="bc" onclick="padrao()">Reverter</button>
+        <p id="tempo">0</p>
     </div>
 
     <div>
@@ -44,9 +49,10 @@
     </div>
 
     <div>
-        <p id="c">0</p>
         <button class="ic" onclick="IniciarCronometro()">Iniciar </button>
-        <button class="pc" onclick="PararCronometro()">Parar </but>
+        <button class="pc" onclick="PararCronometro()">Parar </button>
+        <button class="bc" onclick="ZerarCronometro()">Zerar </button>
+            <p id="c">0</p>            
     </div>
 
 <script src="script.js"></script>
